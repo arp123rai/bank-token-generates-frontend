@@ -1,16 +1,97 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🏦 Bank Token Generation System
 
-Currently, two official plugins are available:
+## 📌 Project Overview
+This is a full-stack Bank Token Generation System designed to manage customer queues in banks efficiently. Customers can generate tokens and track their waiting status in real-time. The system reduces crowding and improves service flow in bank counters.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 👤 Customer Side
+- 🎫 Generate real-time token number
+- ⏳ View estimated waiting time
+- 📊 See current running token number
+- 🔔 Notification when turn is near (sound alert + message)
+- ⚡ Alert message: "Your turn is coming, please be ready"
+- 🎉 Notification when token is active: "This is your turn"
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🏦 Counter System
+- 🧾 3 Service Counters:
+  - Cash Counter
+  - Loan Counter
+  - General Services Counter
+- 🔄 Each counter serves one token at a time
+- 📢 Automatic token movement between counters
+
+---
+
+### 🔊 Smart Alert System
+- Sound notification when user is next in queue
+- Alert when only 3 people are ahead
+- Real-time updates for every token movement
+
+---
+
+### 👨‍💼 Manager Dashboard
+- 📊 View total tokens generated per day
+- ⏰ Peak hours analysis (busy time tracking)
+- 📈 Weekly analytics chart (7 days report)
+- 👥 Monitor all counters in real-time
+- 📉 Queue load visualization
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend:
+- React.js
+- HTML5
+- CSS3
+- JavaScript
+
+### Backend:
+- Java (Spring Boot)
+- REST APIs
+- Eclipse IDE
+
+### Database:
+- MySQL
+
+---
+
+## 🚀 How It Works
+1. Customer selects service type
+2. System generates token number
+3. Token enters queue system
+4. Counters serve tokens one by one
+5. User gets real-time updates and alerts
+6. Manager monitors all activity via dashboard
+
+---
+
+## 📊 Dashboard Features
+- Daily token statistics
+- Weekly usage chart
+- Peak traffic time analysis
+- Counter performance tracking
+
+---
+
+## 🔐 Security Note
+Sensitive configuration like database credentials are excluded using `.gitignore` and managed securely.
+
+---
+
+## 👨‍💻 Author
+- Full Stack Java Developer
+- Project: Bank Token Management System
+
+---
+
+## 🚀 Future Improvements
+- SMS/WhatsApp token notifications
+- Mobile app version
+- AI-based queue prediction system
